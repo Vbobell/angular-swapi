@@ -5,8 +5,8 @@ import { AngularSvgIconModule } from 'angular-svg-icon';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { LogoComponent } from './logo/logo.component';
+import { HeaderComponent } from './components/header/header.component';
+import { LogoComponent } from './components/logo/logo.component';
 
 @NgModule({
   declarations: [
