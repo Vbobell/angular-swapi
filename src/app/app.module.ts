@@ -1,7 +1,9 @@
-import { HttpClientModule } from '@angular/common/http';
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AngularSvgIconModule } from 'angular-svg-icon';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { HttpClientModule } from "@angular/common/http";
+import { MatIconModule, MatIconRegistry } from "@angular/material/icon";
+import { DomSanitizer } from "@angular/platform-browser";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,9 +20,16 @@ import { LogoComponent } from './components/logo/logo.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    AngularSvgIconModule
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  constructor(private matIconRegistry: MatIconRegistry, private domSanitizer: DomSanitizer) {
+    this.matIconRegistry.addSvgIcon(
+      `logo`,
+      this.domSanitizer.bypassSecurityTrustResourceUrl(`../assets/image/svg/Logo.svg`)
+    );
+  }
+ }
