@@ -12,20 +12,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LogoComponent } from './components/logo/logo.component';
-import { ListComponent } from './components/list/list.component';
 import { ContentTextComponent } from './components/content-text/content-text.component';
 import { SectionFilmsComponent } from './components/section-films/section-films.component';
 import { FilmsComponent } from './containers/films/films.component';
+import { TitleMainComponent } from './components/title-main/title-main.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     LogoComponent,
-    ListComponent,
     ContentTextComponent,
     SectionFilmsComponent,
     FilmsComponent,
+    TitleMainComponent,
   ],
   imports: [
     BrowserModule,

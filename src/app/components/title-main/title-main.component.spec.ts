@@ -1,21 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { ListComponent } from './list.component';
 
-describe('ListComponent', () => {
-  let component: ListComponent;
-  let fixture: ComponentFixture<ListComponent>;
+import { TitleMainComponent } from './title-main.component';
+
+describe('TitleMainComponent', () => {
+  let component: TitleMainComponent;
+  let fixture: ComponentFixture<TitleMainComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ListComponent ],
-      schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
+      declarations: [ TitleMainComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ListComponent);
+    fixture = TestBed.createComponent(TitleMainComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

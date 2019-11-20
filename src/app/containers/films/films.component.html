@@ -1,1 +1,8 @@
-<section class="container container-section" section-films></section>
+<section class="container container-section">
+    <h1 title-main [title]='films.title'></h1>
+    <ul>
+        <li *ngFor="let film of films.list" class="content-item">
+            <article content-text [item]='film'></article>
+        </li>
+    </ul>
+</section>

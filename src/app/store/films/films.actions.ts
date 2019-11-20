@@ -1,3 +1,5 @@
-import { createAction } from '@ngrx/store';
+import { createAction, props } from '@ngrx/store';
 
-export const getList = createAction('[List Component] getList');
+import { Film } from './films.reducer';
+
+export const getList = createAction('[List Component] getList', props<{list: Film[]}>());
