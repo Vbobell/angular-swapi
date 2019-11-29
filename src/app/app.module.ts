@@ -16,6 +16,7 @@ import { ContentTextComponent } from './components/content-text/content-text.com
 import { SectionFilmsComponent } from './components/section-films/section-films.component';
 import { FilmsComponent } from './containers/films/films.component';
 import { TitleMainComponent } from './components/title-main/title-main.component';
+import { ContentImageComponent } from './components/content-image/content-image.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { TitleMainComponent } from './components/title-main/title-main.component
     SectionFilmsComponent,
     FilmsComponent,
     TitleMainComponent,
+    ContentImageComponent,
   ],
   imports: [
     BrowserModule,

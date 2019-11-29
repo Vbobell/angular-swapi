@@ -1,8 +1,11 @@
 <section class="container container-section">
     <h1 title-main [title]='films.title'></h1>
-    <ul>
+    <ul class="content-list">
         <li *ngFor="let film of films.list" class="content-item">
-            <article content-text [item]='film'></article>
+            <figure class="content-image" content-image 
+            [image]="film.episode_id == 0 ? 'assets/image/svg/darth-vader.svg' : 'assets/image/films/film-'+film.episode_id+'.jpg'">
+            </figure>
+            <article class="content-text" content-text [item]='film'></article>
         </li>
     </ul>
 </section>
